@@ -1,0 +1,10 @@
+---
+ hosts: all
+ become: true
+ tasks:
+  - name: Install Java 1.8
+    apt: 
+     name: openjdk-8-jdk 
+     state: present 
+ tags:  
+  - packages
