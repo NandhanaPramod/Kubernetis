@@ -1,3 +1,10 @@
+kubectl create namespace dev
+
+OR 
+
+kubectl create -f namespace-dev.yml
+
+
 
 web service can call the DB service service that is created in same namespace >>>>  mysql.connect(db-service)
 web service can call the DB service that is created in diffrent namespace called "dev" >>>> mysql.connect(db-service.dev.svc.cluster.local)
@@ -6,3 +13,6 @@ kubectl get namespaces > To list all the namespaces created in a node
 kubectl get pods --namespace=dev > To list the particular pods that created in dev namespace
 
 
+In order to set the namespace from default to another namespace
+
+kubectl config set-context $(kubectl config current-context) --namespace=dev
