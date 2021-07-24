@@ -1,0 +1,4 @@
+kubectl create -f rc-definiton.yml
+kubectl get replicaset
+kubectl replace -f rc-definition.yml  # In order to update the replicase set definiton file with new values.
+kubectl scale --replicas=6 -f rc-definition.yml # In order to update the no of replicas by using command line.
