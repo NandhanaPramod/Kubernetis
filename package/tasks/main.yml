@@ -1,6 +1,0 @@
-    - name: Copy file with owner and permissions
-       src: /root/hostname.yml
-       dest: /root/
-       owner: root
-       group: root
-       mode: '0644'
