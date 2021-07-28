@@ -13,5 +13,5 @@ spec:
   - key: "app"
     operator: "equals"
     value: "blue"
-    effect: "Noschedule"
+    effect: "NoSchedule"
     
