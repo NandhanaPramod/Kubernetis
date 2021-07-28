@@ -10,8 +10,8 @@ spec:
   - name: nginx-controller
     image: nginx    
  tolerations:
-  - key: app
-    operator: equals
-    value: blue
-    effect: Noschedule
+  - key: "app"
+    operator: "equals"
+    value: "blue"
+    effect: "Noschedule"
     
