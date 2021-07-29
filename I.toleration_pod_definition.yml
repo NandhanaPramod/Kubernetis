@@ -11,7 +11,7 @@ spec:
     image: nginx    
  tolerations:
   - key: "app"
-    operator: "equal"
+    operator: "Equal"
     value: "blue"
     effect: "NoSchedule"
     
